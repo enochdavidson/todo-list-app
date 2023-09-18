@@ -1,0 +1,101 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4ab1ff, #2d5cfe);
+}
+
+.app {
+  width: 500px;
+  min-height: 800px;
+  border-radius: 15px;
+  box-shadow: inset gray 2rem;
+  margin: 50px auto;
+  background-color: rgb(243, 249, 250);
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.title {
+  align-self: center;
+}
+
+.todo-list {
+}
+
+.todo-item {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  appearance: none;
+  margin: 15px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.todo-item label {
+  flex-grow: 1;
+}
+
+.todo-item-completed {
+  color: grey;
+  text-decoration: line-through;
+  text-decoration-color: grey;
+}
+
+.todo-item button {
+  margin: 15px;
+}
+
+.todo-item-checkbox:checked {
+  border: 1px solid green;
+  background-color: green;
+}
+
+.todo-form {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+}
+
+.todo-input {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+  flex-grow: 1;
+}
+
+.todo-input:focus {
+  border: 1px solid #2d5cfe;
+}
+
+.todo-add-button {
+  margin: 10px 10px 10px 0px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todo-add-button:active {
+  border: 1px solid #2d5cfe;
+}
